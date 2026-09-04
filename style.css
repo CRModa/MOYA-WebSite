@@ -1042,6 +1042,7 @@ body.dark .leaflet-tile-pane {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-left: 42px;
 }
 
 .footer-brand .logo {
