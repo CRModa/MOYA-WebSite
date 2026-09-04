@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <!-- CSS principal -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -145,7 +147,7 @@
       </div>
     </div>
 
-    <!-- SEDE / CONTACTOS (melhorado) -->
+    <!-- SEDE / CONTACTOS (com mapa interativo) -->
     <div id="contacto" class="contact-section">
       <div class="contact-info">
         <h3><i class="fas fa-map-pin"></i> Sede & contactos</h3>
@@ -197,21 +199,21 @@
       
       <div class="contact-map">
         <div class="map-container">
-          <div class="map-placeholder">
-            <i class="fas fa-map-marked-alt"></i>
-            <div class="map-content">
-              <strong>Pemba · Nampula</strong>
-              <span>Fase piloto</span>
-            </div>
-          </div>
+          <div id="map" class="map-leaflet"></div>
           <div class="map-badge">
-            <i class="fas fa-route"></i> Cobertura: Pemba, Nampula e expansão
+            <i class="fas fa-route"></i> 
+            <span>Fase piloto: <strong>Pemba</strong> · <strong>Nampula</strong></span>
+            <span class="map-badge-expand">Expansão para todo Moçambique</span>
+          </div>
+          <div class="map-legend">
+            <span><i class="fas fa-circle" style="color: #6c3eb8;"></i> Sede</span>
+            <span><i class="fas fa-circle" style="color: #f9b23f;"></i> Fase piloto</span>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- FOOTER (melhorado) -->
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-main">
         <div class="footer-brand">
@@ -266,6 +268,8 @@
 
   </div>
 
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
