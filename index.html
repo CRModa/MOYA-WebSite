@@ -15,29 +15,37 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
 
-    <!-- NAV -->
-    <nav class="navbar">
-      <div class="logo">
-        <i class="fas fa-bolt"></i>
-        <span>Moya</span>
-      </div>
-      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="nav-links" id="navLinks">
-        <a href="#servicos">Serviços</a>
-        <a href="#b2b">Parceiros B2B</a>
-        <a href="#app">App</a>
-        <a href="#contacto">Contacto</a>
-        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema escuro/claro">
-          <i class="fas fa-moon"></i>
-          <span class="theme-label">Escuro</span>
+  <!-- NAV FIXA -->
+  <header class="header-fixed">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <i class="fas fa-bolt"></i>
+          <span>Moya</span>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+          <i class="fas fa-bars"></i>
         </button>
-        <a href="#" class="btn btn-primary btn-mobile-full" id="loginBtn"><i class="fas fa-user-plus"></i> Entrar</a>
-      </div>
-    </nav>
+        <div class="nav-links" id="navLinks">
+          <a href="#servicos">Serviços</a>
+          <a href="#b2b">Parceiros B2B</a>
+          <a href="#app">App</a>
+          <a href="#contacto">Contacto</a>
+          <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema escuro/claro">
+            <i class="fas fa-moon"></i>
+            <span class="theme-label">Escuro</span>
+          </button>
+          <a href="#" class="btn btn-primary btn-mobile-full" id="loginBtn"><i class="fas fa-user-plus"></i> Entrar</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Espaço para compensar o header fixo -->
+  <div class="header-spacer"></div>
+
+  <div class="container">
 
     <!-- HERO / APRESENTAÇÃO -->
     <section class="hero slide-in">
@@ -213,56 +221,58 @@
       </div>
     </div>
 
-    <!-- FOOTER -->
+    <!-- FOOTER com margin-left: 40px -->
     <footer class="footer">
-      <div class="footer-main">
-        <div class="footer-brand">
-          <div class="logo">
-            <i class="fas fa-bolt"></i>
-            <span>Moya</span>
+      <div class="footer-inner">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <div class="logo">
+              <i class="fas fa-bolt"></i>
+              <span>Moya</span>
+            </div>
+            <p>Super App Moçambicano que conecta transporte, alimentação e logística com IA inclusiva, suporte por voz e idiomas locais.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
           </div>
-          <p>Super App Moçambicano que conecta transporte, alimentação e logística com IA inclusiva, suporte por voz e idiomas locais.</p>
-          <div class="footer-social">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          
+          <div class="footer-links">
+            <div class="footer-column">
+              <h5><i class="fas fa-cube"></i> Serviços</h5>
+              <a href="#servicos"><i class="fas fa-taxi"></i> Moya Trek</a>
+              <a href="#servicos"><i class="fas fa-utensils"></i> Moya Food</a>
+              <a href="#servicos"><i class="fas fa-box"></i> Moya Logistics</a>
+              <a href="#servicos"><i class="fas fa-bus"></i> Moya Travel</a>
+            </div>
+            <div class="footer-column">
+              <h5><i class="fas fa-building"></i> Empresa</h5>
+              <a href="#b2b"><i class="fas fa-handshake"></i> Parceiros B2B</a>
+              <a href="#contacto"><i class="fas fa-map-pin"></i> Contacto</a>
+              <a href="#app"><i class="fas fa-mobile-alt"></i> App</a>
+              <a href="#"><i class="fas fa-blog"></i> Blog</a>
+            </div>
+            <div class="footer-column">
+              <h5><i class="fas fa-support"></i> Suporte</h5>
+              <a href="#"><i class="fas fa-question-circle"></i> FAQ</a>
+              <a href="#contacto"><i class="fas fa-headset"></i> Ajuda</a>
+              <a href="#"><i class="fas fa-shield-alt"></i> Privacidade</a>
+              <a href="#"><i class="fas fa-file-contract"></i> Termos</a>
+            </div>
           </div>
         </div>
         
-        <div class="footer-links">
-          <div class="footer-column">
-            <h5><i class="fas fa-cube"></i> Serviços</h5>
-            <a href="#servicos"><i class="fas fa-taxi"></i> Moya Trek</a>
-            <a href="#servicos"><i class="fas fa-utensils"></i> Moya Food</a>
-            <a href="#servicos"><i class="fas fa-box"></i> Moya Logistics</a>
-            <a href="#servicos"><i class="fas fa-bus"></i> Moya Travel</a>
-          </div>
-          <div class="footer-column">
-            <h5><i class="fas fa-building"></i> Empresa</h5>
-            <a href="#b2b"><i class="fas fa-handshake"></i> Parceiros B2B</a>
-            <a href="#contacto"><i class="fas fa-map-pin"></i> Contacto</a>
-            <a href="#app"><i class="fas fa-mobile-alt"></i> App</a>
-            <a href="#"><i class="fas fa-blog"></i> Blog</a>
-          </div>
-          <div class="footer-column">
-            <h5><i class="fas fa-support"></i> Suporte</h5>
-            <a href="#"><i class="fas fa-question-circle"></i> FAQ</a>
-            <a href="#contacto"><i class="fas fa-headset"></i> Ajuda</a>
-            <a href="#"><i class="fas fa-shield-alt"></i> Privacidade</a>
-            <a href="#"><i class="fas fa-file-contract"></i> Termos</a>
-          </div>
+        <div class="footer-bottom">
+          <span>© 2026 Moya — Todos os direitos reservados</span>
+          <span class="footer-badges">
+            <span><i class="fas fa-robot"></i> IA inclusiva</span>
+            <span><i class="fas fa-globe"></i> 4 idiomas nacionais</span>
+            <span><i class="fas fa-shield-alt"></i> Seguro</span>
+          </span>
         </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <span>© 2026 Moya — Todos os direitos reservados</span>
-        <span class="footer-badges">
-          <span><i class="fas fa-robot"></i> IA inclusiva</span>
-          <span><i class="fas fa-globe"></i> 4 idiomas nacionais</span>
-          <span><i class="fas fa-shield-alt"></i> Seguro</span>
-        </span>
       </div>
     </footer>
 
